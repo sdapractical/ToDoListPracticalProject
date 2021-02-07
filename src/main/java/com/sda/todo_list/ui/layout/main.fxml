@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
-            xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.sda.todo_list.ui.controller.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.todo_list.ui.controller.MainController">
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0"  maxHeight="48.0" prefWidth="108.0" text="Tasks" />
-            <Button layoutX="14.0" layoutY="76.0" mnemonicParsing="false" prefHeight="48.0" maxHeight="48.0" prefWidth="108.0" text="Add task" />
-            <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" prefHeight="48.0" maxHeight="48.0" prefWidth="108.0" text="Categories"/>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="100.0" text="Main menu">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="showTasksButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="30.0" minWidth="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Show list">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0"/>
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="categoriesButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="30.0" minWidth="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Categories">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0"/>
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="addTaskButton" mnemonicParsing="false" minHeight="30.0" minWidth="130.0" prefHeight="30.0" prefWidth="130.0" text="Add task">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="exitButton" mnemonicParsing="false" minHeight="30.0" minWidth="130.0" prefHeight="30.0" prefWidth="130.0" text="Exit">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Button>
          </children>
-      </AnchorPane>
+      </VBox>
    </left>
 </BorderPane>

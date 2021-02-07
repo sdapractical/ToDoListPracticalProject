@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="showUndoneTasks" minWidth="350.0" prefHeight="540.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.todo_list.ui.controller.TaskListController">
+   <children>
+      <TableView fx:id="taskList" layoutX="25.0" layoutY="14.0" minWidth="800.00" prefHeight="450.0" prefWidth="800.0">
+        <columns>
+           <TableColumn prefWidth="200.0" text="Task">
+              <cellValueFactory>
+                 <PropertyValueFactory property="name" />
+              </cellValueFactory>
+           </TableColumn>
+           <TableColumn prefWidth="250.0" text="Description">
+              <cellValueFactory>
+                 <PropertyValueFactory property="description" />
+              </cellValueFactory>
+           </TableColumn>
+           <TableColumn prefWidth="150.0" text="Category">
+              <cellValueFactory>
+                 <PropertyValueFactory property="category" />
+              </cellValueFactory>
+           </TableColumn>
+           <TableColumn prefWidth="100.0" text="Date">
+              <cellValueFactory>
+                 <PropertyValueFactory property="date" />
+              </cellValueFactory>
+           </TableColumn>
+           <TableColumn prefWidth="50.0" text="Time">
+              <cellValueFactory>
+                 <PropertyValueFactory property="time" />
+              </cellValueFactory>
+           </TableColumn>
+           <TableColumn prefWidth="50.0" text="Done">
+              <cellValueFactory>
+                 <PropertyValueFactory property="completed" />
+              </cellValueFactory>
+           </TableColumn>
+        </columns>
+      </TableView>
+      <CheckBox fx:id="showUndone" layoutX="25.0" layoutY="477.0" mnemonicParsing="false" text="Show only undone tasks" />
+      <Button fx:id="markAsDone" layoutX="25.0" layoutY="500.0" maxWidth="120.0" minWidth="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Mark as done" />
+      <Button fx:id="deleteTask" layoutX="157.0" layoutY="500.0" mnemonicParsing="false" text="Delete" />
+   </children>
+</AnchorPane>

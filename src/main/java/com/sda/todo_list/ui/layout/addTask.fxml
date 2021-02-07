@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.todo_list.ui.controller.AddTaskController">
+   <children>
+      <Label layoutX="33.0" layoutY="14.0" prefHeight="24.0" prefWidth="79.0" text="Name" />
+      <Label layoutX="33.0" layoutY="50.0" prefHeight="24.0" prefWidth="79.0" text="Description" />
+      <Label layoutX="33.0" layoutY="89.0" prefHeight="24.0" prefWidth="79.0" text="Category" />
+      <ChoiceBox fx:id="categoriesBox" layoutX="122.0" layoutY="88.0" prefHeight="26.0" prefWidth="251.0" />
+      <TextField fx:id="taskDescription" layoutX="122.0" layoutY="49.0" prefHeight="26.0" prefWidth="251.0" promptText="Enter task description" />
+      <TextField fx:id="taskName" layoutX="122.0" layoutY="13.0" prefHeight="26.0" prefWidth="251.0" promptText="Enter task name" />
+      <Label layoutX="33.0" layoutY="127.0" prefHeight="26.0" prefWidth="79.0" text="Date" />
+      <Label layoutX="33.0" layoutY="156.0" prefHeight="24.0" prefWidth="79.0" text="Time" />
+      <DatePicker fx:id="taskDate" layoutX="122.0" layoutY="127.0" prefHeight="26.0" prefWidth="251.0" promptText="dd/mm/yyyy" />
+      <Button fx:id="saveTask" layoutX="280.0" layoutY="201.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Save task" />
+      <TextField fx:id="taskTime" layoutX="122.0" layoutY="155.0" prefHeight="26.0" prefWidth="251.0" promptText="hh:mm" />
+      <Label fx:id="messageLabel" layoutX="14.0" layoutY="205.0" prefHeight="18.0" prefWidth="234.0" />
+   </children>
+</AnchorPane>

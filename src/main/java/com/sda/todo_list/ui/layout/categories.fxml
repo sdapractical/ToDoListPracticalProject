@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.todo_list.ui.controller.CategoryController">
+   <children>
+      <Label layoutX="28.0" layoutY="341.0" maxWidth="50.0" text="Title:" />
+      <TextField fx:id="categoryName" layoutX="70.0" layoutY="336.0" prefHeight="26.0" prefWidth="320.0" promptText="Please enter a category name" />
+      <Button fx:id="saveCategory" layoutX="70.0" layoutY="372.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add" />
+      <Label layoutX="28.0" layoutY="14.0" text="Existing categories" />
+      <Label fx:id="messageLabel" layoutX="70.0" layoutY="413.0" prefHeight="18.0" prefWidth="241.0" />
+      <Button fx:id="deleteCategory" layoutX="290.0" layoutY="372.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Delete" />
+      <Button fx:id="editCategory" layoutX="180.0" layoutY="372.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Edit" />
+      <TableView fx:id="existingCategories" layoutX="28.0" layoutY="32.0" minHeight="300.00" minWidth="430.00" prefHeight="300.00" prefWidth="430.00">
+        <columns>
+          <TableColumn minWidth="429.00" prefWidth="429.00" text="Title">
+            <cellValueFactory>
+                <PropertyValueFactory property="title" />
+            </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
