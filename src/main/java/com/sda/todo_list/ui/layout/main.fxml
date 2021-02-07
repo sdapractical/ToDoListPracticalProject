@@ -10,7 +10,7 @@
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0"  maxHeight="48.0" prefWidth="108.0" text="Tasks" />
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0"  maxHeight="48.0" prefWidth="108.0" text="Show tasks" />
             <Button layoutX="14.0" layoutY="76.0" mnemonicParsing="false" prefHeight="48.0" maxHeight="48.0" prefWidth="108.0" text="Add task" />
             <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" prefHeight="48.0" maxHeight="48.0" prefWidth="108.0" text="Categories"/>
          </children>
