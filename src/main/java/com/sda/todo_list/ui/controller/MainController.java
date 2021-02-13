@@ -33,7 +33,7 @@ public class MainController implements Initializable {
         });
         categoriesButton.setOnAction(event -> {
             try {
-                ToDoListApplication.setWindow(MenuEnum.ADD_CATEGORY);
+                ToDoListApplication.setWindow(MenuEnum.CATEGORIES);
             } catch (IOException e) {
                 e.printStackTrace();
             }

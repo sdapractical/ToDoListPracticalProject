@@ -49,7 +49,7 @@ public class ToDoListApplication extends Application {
                 stage.setCenter(root);
                 break;
             }
-            case ADD_CATEGORY: {
+            case CATEGORIES: {
                 URL path = Paths.get("src/main/java/com/sda/todo_list/ui/layout/categories.fxml")
                         .toUri().toURL();
                 Parent root = FXMLLoader.load(path);

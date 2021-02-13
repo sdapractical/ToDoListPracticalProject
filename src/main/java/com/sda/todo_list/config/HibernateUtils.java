@@ -11,8 +11,8 @@ public class HibernateUtils {
 
         return new Configuration()
                 .configure("hibernate.cfg.xml")
-//                .addAnnotatedClass(Task)
-//                .addAnnotatedClass(Category)
+                .addAnnotatedClass(Task.class)
+                .addAnnotatedClass(Category.class)
                 .buildSessionFactory();
     }
 }
