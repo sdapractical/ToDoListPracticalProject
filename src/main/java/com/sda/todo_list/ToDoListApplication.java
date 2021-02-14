@@ -1,6 +1,7 @@
 package com.sda.todo_list;
 
 import com.sda.todo_list.ui.model.MenuEnum;
+import com.sda.todo_list.ui.window.ConfirmBox;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,6 +23,10 @@ public class ToDoListApplication extends Application {
 
         window = primaryStage;
         window.setTitle("ToDo List application");
+        window.setOnCloseRequest(event -> {
+            event.consume();
+            closeProgram();
+        });
 
         URL path = Paths.get("src/main/java/com/sda/todo_list/ui/layout/main.fxml").toUri().toURL();
         Parent root = FXMLLoader.load(path);
@@ -64,12 +69,20 @@ public class ToDoListApplication extends Application {
                 break;
             }
             case EXIT_PROGRAM: {
-                window.close();
+                closeProgram();
                 break;
             }
             default: {
                 stage.setCenter(null);
             }
+        }
+    }
+
+    private static void closeProgram() {
+        boolean exit = ConfirmBox.display("Confirm exit",
+                "Are you sure want to exit?");
+        if (exit) {
+            window.close();
         }
     }
 }

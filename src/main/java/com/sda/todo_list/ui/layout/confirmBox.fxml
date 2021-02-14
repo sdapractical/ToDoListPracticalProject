@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="100.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="questionLabel" alignment="CENTER" layoutX="49.0" layoutY="14.0" prefHeight="18.0" prefWidth="294.0" />
+      <Button fx:id="yesButton" layoutX="87.0" layoutY="50.0" mnemonicParsing="false" text="Yes" />
+      <Button fx:id="NoButton" layoutX="257.0" layoutY="50.0" mnemonicParsing="false" text="No" />
+   </children>
+</AnchorPane>
