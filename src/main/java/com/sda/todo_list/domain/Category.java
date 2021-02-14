@@ -35,4 +35,9 @@ public class Category {
     public List<Task> getTaskList() {
         return taskList;
     }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
 }
